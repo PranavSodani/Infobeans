@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #FFF9D0;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: #0e3c65;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    border: 2px solid black;
+    display: flex;
+    height: 100px;
+    width: 500px;
+    background-color: #A0DEFF;
+    border-radius: 1rem;
+    padding: 10px;
+}
+.main{
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inputPass{
+    height: 40px;
+    width: 250px;
+    font-size: 1.5rem;
+    background-color: #CAF4FF;
+}
+::placeholder{
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(81, 78, 78);
+}
+.generate{
+    padding: 20px 30px;
+    border-radius: 1rem;
+    background-color: rgb(76, 218, 54);
+    font-size: .85rem;
+}
+.reset{
+    padding: 20px 30px;
+    border-radius: 1rem;
+    background-color: rgb(218, 133, 54);
+    font-size: .85rem;
+}
+.generate:hover,.reset:hover{
+    cursor: pointer;
+}
+.finalPass{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.finalPassword{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 30px;
+    border-radius: 1rem;
+    display: flex;
+    height: 40px;
+    background-color: #CAF4FF;
+}
+
+@media only screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .finalPass{
+        flex-direction: column;
+        align-items: center;
+    }
+}

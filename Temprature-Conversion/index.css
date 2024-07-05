@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #FFFAE6;
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+/* General styles */
+input {
+    font-size: 1rem;
+}
+
+.heading {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #002379;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next line if space is not enough */
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    gap: 20px; /* Space between items */
+    margin-top: 20px;
+}
+
+.common {
+    height: 30px;
+    width: 200px;
+}
+
+/* Placeholder styles */
+::placeholder {
+    font-size: large;
+    text-align: center;
+}
+
+/* Button styles */
+.convertTemp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust height as needed */
+    margin-top: 20px;
+}
+
+.convert, .reset {
+    padding: 20px 30px;
+    border-radius: 1rem;
+    background-color: #FF5F00;
+    font-size: 1rem;
+    margin-bottom: 10px; /* Add some space between buttons */
+}
+
+.convert:hover, .reset:hover {
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
+
+    .common {
+        width: 80%; /* Adjust width of input fields */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .heading {
+        font-size: 1.5rem; /* Reduce font size of heading on smaller screens */
+    }
+
+    .common {
+        width: 100%; /* Make input fields full width on smaller screens */
+    }
+
+    .convert, .reset {
+        width: 80%; /* Make buttons full width on smaller screens */
+    }
+}
